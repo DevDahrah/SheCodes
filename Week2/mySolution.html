@@ -56,35 +56,24 @@
 
   <body>
     <section>
-      <h1>
-        👩‍💻 She Codes is a Coding Workshop for Women
-      </h1>
-      <h2>
-        Access a new career in Technology
-      </h2>
+      <h1>👩‍💻 She Codes is a Coding Workshop for Women</h1>
+      <h2>Access a new career in Technology</h2>
       <p>
         She Codes teaches coding, design and management skills to women
         <br />
-        <strong>
-          Limited amount of spots!
-        </strong>
+        <strong> Limited amount of spots! </strong>
       </p>
       <br />
-      <button>
-        Apply Now
-      </button>
+      <button>Apply Now</button>
     </section>
     <script>
-      let currentHour = prompt("What is the current hour?")
+      let country = prompt("What country are you from?"); 
+      country = country.toLowerCase()   
 
-      if (currentHour > 18) {
-        alert("Good evening")
+      if (country === "brazil" || country === "portugal") {
+        alert("You speak Portuguese");
       } else {
-        if (currentHour >= 12) {
-          alert("Good afternoon")
-        } else {
-          alert("Good morning")
-        }
+        alert("You don't speak Portuguese");
       }
     </script>
   </body>
