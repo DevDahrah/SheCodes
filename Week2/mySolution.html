@@ -67,38 +67,20 @@
       <button>Apply Now</button>
     </section>
     <script>
-      // let country = prompt("What country are you from?");
-      // country = country.toLowerCase()
+      function apply() {
+        let name = prompt("What is your first name?")
+        let age = prompt("How old are you?")
+        let h1 = document.querySelector("h1")
 
-      // if (country === "brazil" || country === "portugal") {
-      //   alert("You speak Portuguese");
-      // } else {
-      //   alert("You don't speak Portuguese");
-      // }
+        if (age >= 18) {
+          h1.innerHTML = "Hi," + " " + name + "! Welcome to SheCodes !";
+        } else {
+          h1.innerHTML = "Sorry," + " " + name + "! You cannot join SheCodes !";
+        }
+      }
 
-      // function canSpeakPortugese() {
-      //   let country = prompt("What country are you from?");
-
-      //   country = country.toLowerCase();
-
-      //   if (country === "brazil" || country === "portugal") {
-      //     alert("You speak Portuguese");
-      //   } else {
-      //     alert("You don't speak Portuguese");
-      //   }
-      // }
-
-      // canSpeakPortugese()
-
-      //    Select the h2 https://www.shecodes.io/
-      //    How many students do we have listed on the page? https://shecodes.io/students
-
-      // Solution
-      let h2 = document.querySelector("h2");
-      let student = document.querySelectorAll("students");
-
-      // correction
-      document.querySelectorAll(".coder");
+      let button = document.querySelector("button")
+      button.addEventListener("click", apply)
     </script>
   </body>
 </html>
