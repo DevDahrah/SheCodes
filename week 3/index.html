@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Final Project</title>
+    <style>
+      .container {
+        box-shadow: rgba(0, 0, 0, 0.08) 0px 8px 8px 0;
+        background-image: linear-gradient(to left, #931fd6 5%, #3d0c7c 70%);
+        border-radius: 20px;
+        color: #fff;
+        width: 50%;
+        padding: 40px;
+        margin: 30px auto;
+      }
+
+      h1,
+      h2 {
+        text-align: center;
+      }
+
+      p {
+        text-align: center;
+        font-size: 17px;
+      }
+
+      img {
+        max-width: 80%;
+        display: block;
+        margin: 0 auto;
+      }
+
+      li {
+        margin: 0;
+        font-size: 17px;
+      }
+
+      .title {
+        font-weight: 700;
+        font-size: 20px;
+      }
+
+      a {
+        color: #fff;
+        font-size: 18px;
+        text-decoration: none;
+        margin-left: 40px;
+        font-weight: 600;
+        line-height: 2;
+      }
+
+      a:hover {
+        text-decoration: underline;
+        color: gold;
+      }
+
+      button {
+        display: block;
+        margin: 0 auto;
+        color: #9532cf;
+        font-size: 20px;
+        padding: 15px 50px;
+        border-radius: 20px;
+        border: none;
+        transition: all 200ms ease-in-out;
+      }
+
+      button:hover {
+        font-weight: 900;
+        background-color: gold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Cakes</h1>
+      <p>
+        Cake is a flour confection made from flour, sugar, and other ingredients
+        and is usually baked
+      </p>
+      <p>
+        The most common ingredients include flour, sugar, eggs, fat (such as
+        butter, oil, or margarine), a liquid, and a leavening agent, such as
+        baking soda or baking powder. Common additional ingredients include
+        dried, candied, or fresh fruit, nuts, cocoa, and extracts such as
+        vanilla, with numerous substitutions for the primary ingredients.
+      </p>
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/095/794/original/cake1.jpg?1693859876"
+        alt=""
+      />
+      <div class="content">
+        <h2>Varieties Of Cakes</h2>
+        <ol>
+          <li>
+            <span class="title">Butter Cake: </span>
+            Butter cakes are made from creamed butter, sugar, eggs, and flour.
+            They rely on the combination of butter and sugar beaten for an
+            extended time to incorporate air into the batter
+          </li>
+          <li>
+            <span class="title">Sponge cake: </span>
+            Sponge cakes (or foam cakes) are made from whipped eggs, sugar, and
+            flour. Traditional sponge cakes are leavened only with eggs. They
+            rely primarily on trapped air in a protein matrix (generally beaten
+            eggs) to provide leavening, sometimes with a bit of baking powder or
+            other chemical leaven added.
+          </li>
+          <li>
+            <span class="title">Chocolate cake: </span>
+            Chocolate cakes are butter cakes, sponge cakes, or other cakes
+            flavored with melted chocolate or cocoa powder.[
+          </li>
+          <li>
+            <span class="title">Coffee cake: </span>
+            Coffee cake is generally thought of as a cake to serve with coffee
+            or tea at breakfast or a coffee break. Some types use yeast as a
+            leavening agent, while others use baking soda or baking powder.
+          </li>
+          <li>
+            <span class="title">Layer cakes: </span>
+            Layer cakes are cakes made with layers of sponge or butter cake
+            filled with cream, jam, or other filling to hold the layers
+            together.
+          </li>
+        </ol>
+      </div>
+      <a href="https://en.wikipedia.org/wiki/Cake" target="_blank"
+        >Learn more about cakes</a
+      >
+      <br />
+      <br />
+      <button>Order A Cake</button>
+      <div class="footer">
+        <p><em>Coded by </em><strong>Dahrah</strong></p>
+      </div>
+    </div>
+
+    <script>
+      function orderCake() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email?");
+        if (name.length === 0 && email.length === 0) {
+          alert("Please enter a valid name and email address. Thanks");
+        } else {
+          alert("We will send more details to your mail");
+        }
+      }
+
+      let button = document.querySelector("button");
+      button.addEventListener("click", orderCake);
+    </script>
+  </body>
+</html>
